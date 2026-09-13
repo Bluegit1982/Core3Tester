@@ -55,3 +55,36 @@ body { color: #17191d; }
 .contact-panel p { color: #a7aab1; }.contact-panel > a:not(.button) { border-color: #454952; }
 footer { color: #8c9098; border-top-color: #343840; }.brand + div a:hover { color: #e3d458; }
 .button-accent, .story-dark, .booking-band .button-accent { color: #111318; }
+
+/* Dark mode finish */
+:root { --paper: #111318; --cream: #181b21; --ink: #f5f4ed; --line: #343840; }
+body { color: #f5f4ed; background: #111318; }
+.site-header { background: #111318; border-bottom-color: #343840; }
+.brand, .brand b { color: #f5f4ed; }.brand small { color: #999da5; }.brand-mark { filter: invert(1) grayscale(1); }
+.main-nav a:not(.nav-cta) { color: #b9bdc3; }.main-nav a:not(.nav-cta):hover { color: #f5f4ed; background: #262a31; }
+.statement, .stories, .faq { background: #111318; color: #f5f4ed; }.section-kicker { color: #e3d458; }
+.statement-grid p:not(.lead), .principles p, .answer { color: #aeb2b9; }.statement h2 em, .stories h2 em, .faq h2 em { color: #9da2aa; }
+.principles { border-color: #343840; }.principles article { border-color: #343840; }.principles span, .service-number { color: #e3d458; }
+.story-card { background: #1b1e24; }.story-feature { background: #1b1e24; }.story-meta { color: #e3d458; }.story-meta b { color: #aeb2b9; }
+.accordion { border-color: #343840; }.accordion button { color: #f5f4ed; border-color: #343840; }.accordion button span { color: #e3d458; }
+.main-nav.open { background: #111318; }.menu-toggle span { background: #f5f4ed; }
+
+/* Softer dark-mode hierarchy */
+:root { --paper: #202329; --cream: #272a31; --forest: #191c22; --line: #41454e; --dark-line: #41454e; }
+body { background: #202329; }
+.site-header { background: #202329; border-bottom-color: #41454e; }
+.main-nav a:not(.nav-cta):hover { background: #30343c; }
+.hero { background: #191c22; }.hero::before { background-image: linear-gradient(#454a54 1px, transparent 1px), linear-gradient(90deg, #454a54 1px, transparent 1px); }.hero::after { border-color: #565c68; box-shadow: 0 0 0 55px #23272f, 0 0 0 56px #565c68; }
+.statement, .stories, .faq { background: #202329; }.story-card, .story-feature { background: #2b2f37; }
+.services, .contact-panel, footer { background: #191c22; }.services .service-list, .service-card, .accordion, .accordion button { border-color: #41454e; }
+.main-nav.open { background: #202329; box-shadow: 0 12px 25px #0d0f1280; }
+.contact-panel > a:not(.button) { border-color: #565c68; }
+
+/* Testimonial cards */
+.story-card { position: relative; overflow: hidden; border: 1px solid #41454e; background: #272b33; box-shadow: inset 0 3px 0 #e3d458; }
+.story-card .quote { color: #f5f4ed; }
+.story-card .story-meta { color: #e3d458; }
+.story-card .story-meta b { color: #aeb2b9; }
+.story-feature { box-shadow: inset 0 3px 0 #e3d458; }
+.story-dark { border-color: #e3d458; background: #e3d458; box-shadow: none; }
+.story-dark .quote { color: #111318; }
