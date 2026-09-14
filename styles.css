@@ -94,3 +94,18 @@ body { background: #202329; }
 .booking-band .button-accent span,
 .booking-band .button-accent:hover,
 .booking-band .button-accent:hover span { color: #e3d458 !important; background: #111318 !important; }
+
+/* Keep the decorative scroll prompt from intercepting hero CTA clicks. */
+.hero-scroll { z-index: 0; pointer-events: none; }
+.hero-actions { position: relative; z-index: 2; }
+
+.hero-copy .hero-scroll {
+	position: static;
+	z-index: 0;
+	margin-top: 20px;
+	pointer-events: none;
+}
+
+@media (max-width: 800px) {
+	.hero-copy .hero-scroll { display: block; }
+}
