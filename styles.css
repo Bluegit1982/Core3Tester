@@ -88,3 +88,9 @@ body { background: #202329; }
 .story-feature { box-shadow: inset 0 3px 0 #e3d458; }
 .story-dark { border-color: #e3d458; background: #e3d458; box-shadow: none; }
 .story-dark .quote { color: #111318; }
+
+/* Keep the booking CTA readable against its charcoal surface. */
+.booking-band .button-accent,
+.booking-band .button-accent span,
+.booking-band .button-accent:hover,
+.booking-band .button-accent:hover span { color: #e3d458 !important; background: #111318 !important; }
